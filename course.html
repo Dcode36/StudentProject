@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduD!</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+ 
+   
+    <section class="sub-header">
+        <nav> 
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="test.html">TEST</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                  
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="skills">Our Course</h1>
+    </section>
+    
+<!---------- course ----------->
+    
+<section class="course">
+    <h1>Skills</h1>
+    <p>Click And Learn</p>
+   
+    <div class="row">
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=QGK7aTGHeIQ">
+            <h3> Communication Skills</h3>
+            <p>YouTube : Aman Dhattarwal  <br></p>
+          
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=J2h0Xb0WNwQ">
+            <h3>Writing Skills</h3>
+            <p>YouTube : WsCube Tech</p>
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=HeAcRFIrKFY">
+            <h3>Time Management</h3>
+            <p>YouTube : Sandeep Maheshwari </p>
+          
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=xJM_CQN8-ns">
+            <h3> Adaptability</h3>
+            <p>YouTube : TED  <br></p>
+          
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=5R5oH2tMgZY">
+            <h3>Problem Solving</h3>
+            <p>YouTube : Simerjeet Singh</p>
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=hHIikHJV9fI">
+            <h3>Teamwork</h3>
+            <p>YouTube : Coding Tech </p>
+          
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=cYhgIlTy4yY">
+            <h3> Creativity</h3>
+            <p>YouTube : Sprouts <br></p>
+          
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=N8tjj9wf9VI">
+            <h3>Leadership</h3>
+            <p>YouTube : Productivity ACE</p>
+        </a>
+        </div>
+        <div class="course-col">
+            <a href="https://www.youtube.com/watch?v=F-_qOh5tKrI">
+            <h3>Work Ethic</h3>
+            <p>YouTube : Valuetainment </p>
+          
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We want to Make student life more  Productive and Efficient.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Dcode</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
