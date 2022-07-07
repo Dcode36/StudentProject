@@ -1,79 +1,81 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduD!</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduD!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <section class="sub-header">
-        <nav> 
+        <nav>
             <a href="index.html"><img src="logo.png"></a>
-            <div class="nav-links" id="navLinks">  
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="test.html">TEST</a></li>
                     <li><a href="course.html">COURSE</a></li>
-                  
+
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-            <h1>Contact Us</h1>
+        <h1>Contact Us</h1>
     </section>
-    
-    
-<!------- Contact Us ------->
 
-    
-   
-    
+
+    <!------- Contact Us ------->
+
+
+
+
     <section class="contact-us">
-            <div class="row">
-                <div class="contact-col">
-                    <div>
-                        <i class="fa fa-home"></i>
-                        <span>
-                            <h5>A/p Nesari ,Gadhhinglaj</h5>
-                            <p>Gadhhinglaj, Kolhapur, IN</p>
-                        </span>
-                    </div>
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <span>
-                            <h5>+91 7719964183</h5>
-                            <p>Monday to Saturday 10 Am to 6 Pm</p>
-                        </span>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                            <h5>kadamdigvijay36@gmail.com</h5>
-                            <p>Email us your query</p>
-                        </span>
-                    </div>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>A/p Nesari ,Gadhhinglaj</h5>
+                        <p>Gadhhinglaj, Kolhapur, IN</p>
+                    </span>
                 </div>
-                <div class="contact-col">
-                    <form method="post" action="contact-form-handler.php">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn" onclick="responce()"><a href="index.html"> Send Message</a></button>
-                    </form> 
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 7719964183</h5>
+                        <p>Monday to Saturday 10 Am to 6 Pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>kadamdigvijay36@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
                 </div>
             </div>
+            <div class="contact-col">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter email address" required>
+                    <input type="text" name="Subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                 <button type="submit" class="hero-btn red-btn" onclick="responce()" >  <a href="index.html">  Send Message</a></button>
+                </form>
+            </div>
+        </div>
     </section>
-    
-<!-------- footer ---------->
 
-<section class="footer">
-    <h4>About Us</h4>
-    <p>We want to Make student life more  Productive and Efficient.</p>
+    <!-------- footer ---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We want to Make student life more Productive and Efficient.</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-twitter"></i>
@@ -81,26 +83,35 @@
             <i class="fa fa-linkedin"></i>
         </div>
         <p>made with <i class="fa fa-heart-o"></i> by Dcode</p>
-</section>    
-  
-  
-<!----JavaScript for toggle menu---->
-<script>
-    var navLinks = document.getElementById("navLinks");
+    </section>
 
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
 
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-    function responce(){
-        alert("Your Responce Is Submitted")
-    }
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
 
-  
-</script> 
-    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        function responce() {
+            alert("Your Responce Is Submitted")
+        }
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTxtddlO39irAWT0XRiShHukGL1XJ0kJYNclY2KJgk3TFnlZpV3OJoOPz3_D2SaW4Yhg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+
 </body>
-</html>    
+
+</html>
